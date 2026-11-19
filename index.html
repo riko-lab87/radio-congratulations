@@ -180,6 +180,29 @@ p {
   margin-top: 20px;
 }
 
+.congrats-run {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 15px 0;
+}
+
+.congrats-run span {
+  display: inline-block;
+  padding-left: 100%;
+  color: #9cf5d9;
+  font-size: clamp(25px, 7vw, 39px);
+  font-weight: bold;
+  text-shadow: 0 0 15px #54e8c6;
+  animation: run-left 7s linear infinite;
+}
+
+@keyframes run-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+
+  
 </style>
 </head>
 
