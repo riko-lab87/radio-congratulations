@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONGRATULATIONS｜祝福通信局</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Yu Gothic", "Meiryo", sans-serif;
+  color: #e5f5ff;
+  background:
+    radial-gradient(ellipse at 50% 20%, #173e58 0%, #0a1c30 55%, #050d19 100%);
+  overflow-x: hidden;
+}
+
+.station {
+  min-height: 100vh;
+  padding: 35px 18px 50px;
+  text-align: center;
+  position: relative;
+}
+
+.card {
+  max-width: 560px;
+  margin: 20px auto;
+  padding: 32px 22px;
+  border: 1px solid #3b91a9;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #10283d, #0a1728);
+  box-shadow: 0 0 35px #00d9ff22, inset 0 0 25px #00d9ff0b;
+  position: relative;
+  z-index: 2;
+}
+
+.topline {
+  color: #70eaff;
+  font-size: 11px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.signal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  height: 65px;
+  margin: 20px 0;
+}
+
+.signal span {
+  display: block;
+  width: 7px;
+  border-radius: 8px;
+  background: #54e8ef;
+  box-shadow: 0 0 12px #54e8ef;
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+.signal span:nth-child(1) { height: 18px; animation-delay: .1s; }
+.signal span:nth-child(2) { height: 30px; animation-delay: .2s; }
+.signal span:nth-child(3) { height: 43px; animation-delay: .3s; }
+.signal span:nth-child(4) { height: 55px; animation-delay: .4s; }
+.signal span:nth-child(5) { height: 43px; animation-delay: .5s; }
+.signal span:nth-child(6) { height: 30px; animation-delay: .6s; }
+.signal span:nth-child(7) { height: 18px; animation-delay: .7s; }
+
+@keyframes pulse {
+  from { opacity: .45; transform: scaleY(.65); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+
+.cq {
+  color: #ffffff;
+  font-size: clamp(38px, 10vw, 58px);
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin: 10px 0;
+  text-shadow: 0 0 18px #00d9ff99;
+}
+
+.sub {
+  color: #72eaff;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.divider {
+  height: 1px;
+  margin: 25px 0;
+  background: linear-gradient(90deg, transparent, #4bcce5, transparent);
+}
+
+.success {
+  color: #9cf5d9;
+  font-size: clamp(27px, 7vw, 39px);
+  font-weight: bold;
+  line-height: 1.4;
+  text-shadow: 0 0 15px #54e8c677;
+}
+
+.first {
+  display: inline-block;
+  margin: 17px 0;
+  padding: 9px 20px;
+  border: 1px solid #61e7d1;
+  border-radius: 30px;
+  color: #8df8dc;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+h2 {
+  color: #72eaff;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.message {
+  margin: 25px 0;
+  padding: 20px 15px;
+  border-radius: 12px;
+  background: #142e43;
+  border: 1px solid #28536a;
+}
+
+.highlight {
+  color: #9cf5d9;
+  font-weight: bold;
+}
+
+.frequency {
+  margin: 25px 0;
+  padding: 14px;
+  background: #071522;
+  border: 1px solid #286078;
+  border-radius: 10px;
+  color: #70eaff;
+  font-family: monospace;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.footer {
+  color: #a9cbd9;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.ending {
+  margin-top: 30px;
+  color: #72eaff;
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.blink {
+  animation: blink 1.5s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: .25; }
+}
+
+.small {
+  color: #668fa3;
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="station">
+
+<main class="card">
+
+  <div class="topline">INCOMING TRANSMISSION...</div>
+
+  <div class="signal">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="cq">CQ CQ CQ!</div>
+  <div class="sub">CALLING ALL STATIONS</div>
+
+  <div class="divider"></div>
+
+  <div class="success">
+    CONGRATULATIONS!!
+  </div>
+
+  <div class="first">FIRST CHALLENGE · FIRST SUCCESS</div>
+
+  <h2>合格おめでとう！！</h2>
+
+  <div class="message">
+    <p>
+      初めての挑戦で、見事合格！！<br>
+      本当におめでとう！
+    </p>
+
+    <p>
+      好きなことに夢中になって、<br>
+      自分の興味をとことん追いかける。<br>
+      その積み重ねが、今回の大きな成果に<br>
+      つながったんだね！
+    </p>
+
+    <p class="highlight">
+      自分の「好き」を大切に。<br>
+      これからも新しい世界に<br>
+      どんどん挑戦してね！
+    </p>
+  </div>
+
+  <div class="frequency">
+    ★ SIGNAL RECEIVED ★
+  </div>
+
+  <div class="signal">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <h2>YOUR NEXT ADVENTURE<br>STARTS NOW!</h2>
+
+  <p class="footer">
+    君の好奇心が、まだ見ぬ世界への電波になる。<br>
+    これからの活躍も楽しみにしているよ！
+  </p>
+
+  <div class="divider"></div>
+
+  <div class="ending">
+    <span class="blink">●</span> 73 · BEST WISHES · 73
+  </div>
+
+  <div class="small">
+    END OF TRANSMISSION
+  </div>
+
+</main>
+</div>
+</body>
+</html>
